@@ -1,0 +1,145 @@
+* {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: 'bungee', cursive;
+    font-weight:normal ;
+}
+
+body, input, textarea{
+    font-family: 'Robuto', sans-serif;
+}
+
+header {
+    padding: 16px;
+    background-color: blueviolet;
+    color: azure;
+}
+
+header h1,
+h2{
+    font-weight: normal;
+}
+header nav li{
+    display: inline;
+    margin: 16px;
+    font-size: 17px;
+}
+
+header nav li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width:100%;
+    margin: 0 auto;
+    margin: 20px;
+}
+/*tanto o header como o container iram receber as mesmas mudanças*/
+header .container,
+section .container{
+    display: flex;
+    /*esse atributo serve para centralizar o conteudo na vertical*/
+    align-items: center;
+    /* distribuição de elementos aplicando uma margem igual para ambos*/
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list li{
+    /*este atributo serve para deixar o que esta na lista um do lado do outro*/
+    display: inline;
+    margin-right: 5px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px o;
+}
+
+section h2{
+    margin-bottom: 16px;
+    color:blueviolet;
+}
+
+section{
+    color:darkblue;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right:32px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+
+}
+
+#contact .container{
+    display: block;
+}
+
+#contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+textarea{
+    resize: none;
+    height: 60px;
+}
+
+section h3{
+    margin-bottom: 16px ;
+}
+
+form button{
+    background-color: darkblue;
+    color: aliceblue;
+    border:none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(26, 26, 83);
+}
+
+input:focus, textarea:focus{
+    outline-color: blue;
+}
+footer{
+    background-color: rgb(2, 2, 66);
+    color: aliceblue;
+    padding: 16px 0;
+}
